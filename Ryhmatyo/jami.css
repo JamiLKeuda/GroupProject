@@ -8,17 +8,202 @@
  }
 
  .page-header {
-    background-color: #fefefe;
-    padding: 1.3rem;
+    background-color: #000000;
+    padding: 0.1rem;
     display: flex;
     justify-content: flex-end;
+    box-shadow: 0 0 20px 1px rgb(228, 3, 253);
+    
+}
+  
+.some-icons {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+.some-icons img {
+    height: 100px;
+    width: 40px;
 }
 
-.nav-bar a   {
-    color: rgb(0, 0, 0);
-    padding: 1.3rem;
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+  
+  .nav-bar a {
+    margin: 0 10px;
+    transform-origin: center;
+    text-decoration: none;
+    padding: 1.2rem;
     cursor: pointer;
-}
-.nav-bar a.active {
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  
+  .nav-bar a.active {
+    font-weight: bold;
     background-color: #12B1C1;
-}
+  }
+  
+  .nav-bar a:hover  {
+    transform: scale(1.2) translateZ(0);
+    filter: blur(0);
+    opacity: 0.2;
+    text-transform: capitalize;
+    transition: 0.5s;
+    font-size: 1.5em;
+    
+  }
+  
+  .nav-bar a:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff497c;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+  }
+  
+  .nav-bar a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  .links a {
+    margin: 0 10px;
+    padding: 10px 5px;
+    font-size: 16px;
+    transition: all 0.5s;
+    color: white;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 700px;
+  }
+  
+  .social-media-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-media-icons img {
+    height: 40px;
+    width: 40px;
+    transform-origin: left;
+  }
+
+  /* this is going to make the form look like a card */
+  .contact-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: #000;
+    margin: 10px auto 30px auto;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* this will make the form more responsive */
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  /* this will style the form inputs and background to look more professional and stylish */
+  .contact-form input,
+  .contact-form textarea {
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin: 0;
+    padding: 12px 15px;
+    resize: none;
+  }
+
+  /* styling the submit button */
+  .contact-form button {
+    background-color: #12B1C1;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+  /* making the contact form buttons more responsive and while hovering they will change color and have a nice effect */
+  .contact-form button:hover {
+    background-color: #ff497c;
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+
+  /* this will make the button have moving shadow while hovering over it */
+  .contact-form button:hover {
+    box-shadow: 0 0 20px 1px rgb(228, 3, 253);
+  }
+
+  /* after pressing the submit button, the button will change color and give a nice effect */
+  .contact-form button:active {
+    background-color: #ff497c;
+    transform: scale(0.98);
+  }
+
+  /* after the button is pressed the card turns into a thank you message */
+  .contact-form .thank-you-message {
+    color: #12B1C1;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  /* by clicking the button, it will redirect to the about page */
+  .contact-form .redirect {
+    color: #12B1C1;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  /* lets make the social media icons bounce up and down while hovering over them */
+  .social-media-icons img:hover {
+    transform: scale(1.2) translateZ(0);
+    filter: blur(0);
+    opacity: 0.2;
+    transition: 0.5s;
+  }
+
+  /* making the form box have a moving light around it*/
+  .contact-form {
+    box-shadow: 0 0 20px 1px rgb(228, 3, 253);
+    animation: pulse 0.5s infinite;
+
+  }
+
+/* makes the footer text have a little more padding */
+  .footer {
+    padding: 2rem;
+    text-align: center;
+    color: rgb(4, 4, 4);
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+/* moves the fb.png to the right side of the contact form */
+  .fb {
+    margin-left: 300px;
+  }
+
+  

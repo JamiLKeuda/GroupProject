@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href="jami.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <!-- add the animate.js-->
+        <script src="animate.js"></script>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>Home</title>
+
+            <style>
+                body {
+                    background-image: url('yessieslogo.png');
+                    background-repeat:repeat;
+                    
+                    background-attachment:fixed;
+                    background-color: rgb(0, 17, 255);
+                }
+            </style>
+
+            <style>
+
+            </style>
     </head>
-      
+      <!-- this is the navigation bar-->
+
       <body>
-          <div class="page-header">
-            <div id="navigation-bar" class="nav-bar">
-                <a class="active"> HOME </a>
-                <a>  SHOP </a>
-                <a> ABOUT  </a>
+        <div class="page-header">
+            <div class="nav-bar">
+              <div class="social-media-icons">
+                <a href="https://www.instagram.com/info.yessies/" target="_blank"><img src="instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/MainospalvelutYessies" target="_blank"><img src="face.png" alt="facebook"></a>
+              </div>
+              <div id="navigation-bar" class="links">
+                <a href="index.html" class="active"> HOME </a>
+                <a href="shop.html">  SHOP </a>
+                <a href="about.html"> ABOUT  </a>
                 <a href="contact.html"> CONTACT </a>
+              </div>
             </div>
           </div>
-          <p>Hello</p>
+          <!-- this is the contact form-->
+          <div class="contact-form">
+            <div class="contact-form-container">
+              <div class="contact-form-header">
+                <h1>CONTACT US</h1>
+              </div>
+              <div class="contact-form-content">
+                <form action="contact.php" method="post">
+                  <div class="contact-form-input">
+                    <input type="text" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="contact-form-input">
+                    <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="contact-form-input">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="contact-form-input">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="contact-form-input">
+                    <button type="button" name="submit">SEND</button>
+                    <button type="reset" name="reset">RESET</button>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- this is the footer-->
+            <div class="footer">
+              <div class="footer-container">
+                <div class="footer-content">
+                  <div class="footer-content-header">
+                    <h2>Making your life better</h2>
+                  </div>
+                  <div class="footer-content-text">
+                    <p>Yessies Oy</p>
+                    <p>Yrjönkatu 20</p>
+                    <p>00100 Helsinki</p>
+
+                    <!-- adds social media icons to the bottom of the page-->
+                    <div class="social-media-icons">
+                      <a href="https://www.instagram.com/info.yessies/" target="_blank"><img src="instagram.png" alt="instagram"></a>
+                      <a class="fb" href="https://www.facebook.com/MainospalvelutYessies" target="_blank"><img src="face.png" alt="facebook"></a>
+                    </div>
+                    
+                    
     </body>
 </html>
