@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <link href="jere.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact Us</title>
+        <title>Ota yhteyttä</title>
     </head>
     <body>
         <div class="page-header">
-          <div id="navigation-bar" class="nav-bar">
-              <a href="index.html" class="active"> HOME </a>
-              <a> SHOP </a>
-              <a> ABOUT  </a>
-              <a href="contact.html"> CONTACT </a>
-          </div>
-        </div>
-        <h1>Ota yhteyttä</h1>
-        <form>
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process-php">
+            <div class="nav-bar">
+              <div class="social-media-icons">
+                <a href="https://www.instagram.com/info.yessies/" target="_blank"><img src="imgs/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/MainospalvelutYessies" target="_blank"><img src="imgs/face.png" alt="facebook"></a>
+              </div>
+              <div id="navigation-bar" class="links">
+                <a href="index.html" class="active"> HOME </a>
+                <a href="shop.html">  SHOP </a>
+                <a href="about.html"> ABOUT  </a>
+                <a href="contact.html"> CONTACT </a>
+              </div>
+            <div class="contact-form-process">
+                <h1>Ota yhteyttä</h1>
+                <img class="logo" src="yessieslogo23423.png" alt="logo"> 
+        <form action="contact-form-process.php" method="post">
             <table>
-            <tr>
-                <td>Etunimi: </td>
-            </tr>
-            <tr>
-                <td>Sukunimi: </td>
-            </tr>
+                <tr>
+                    <td>Etunimi: </td>
+                    <td><input type="text" name="firstname" size="30" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>Sukunimi: </td>
+                    <td><input type="text" name="lastname" size="30" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>Sähköposti: </td>
+                    <td><input type="text" name="email" size="30" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>Puhelinnumero: </td>
+                    <td><input type="text" name="phone" size="30" maxlength="30" /></td>
+                </tr>
+                <tr>
+                    <td>Viesti: </td>
+                    <td><textarea name="message" rows="5" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="submit" value="Lähetä" /></td>
+                </tr>
+            </div>
             </table>
         </form>
   </body>
