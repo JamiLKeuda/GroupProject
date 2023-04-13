@@ -7,18 +7,23 @@
     padding: 0;
  }
 
+body {
+  margin: 0;
+  padding: 0;
+}
  .page-header {
     background-color: #000000;
-    padding: 0.1rem;
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0 0 20px 1px rgb(195, 195, 195);
-    
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0);
+
 }
 
 .nav-bar {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  overflow: hidden;
 }
   
   .nav-bar a {
@@ -73,7 +78,7 @@
   .social-media-icons {
     display: flex;
     align-items: center;
-    margin-right: 700px;
+    margin-right: 1200px;
   }
   
   .social-media-icons a {
@@ -84,4 +89,27 @@
     height: 40px;
     width: 40px;
     transform-origin: left;
+  }
+
+  /* center the logo to navbar */
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: -700px;
+    color: white;
+  }
+
+  .carousel-inner {
+    display: inline-flex;
+    margin-left: 0;
+  }
+
+  .carousel-indicators li {
+    visibility: hidden;
+  }
+
+  .carousel-inner .item img {
+    margin: auto;
+    width: 50%;
+    object-fit: fill;
   }
