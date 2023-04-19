@@ -5,8 +5,6 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *,
 ::before,
 ::after {
@@ -49,7 +47,6 @@ html {
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-  font-family: 'Poppins', sans-serif !important;
 }
 
 /*
@@ -164,16 +161,6 @@ table {
 3. Remove default padding in all browsers.
 */
 
-input {
-  background-color: white !important;
-  border: 1px solid black;
-}
-
-textarea {
-  background-color: white !important;
-  border: 1px solid black;
-}
-
 button,
 input,
 optgroup,
@@ -183,6 +170,7 @@ textarea {
   font-size: 100%; /* 1 */
   font-weight: inherit; /* 1 */
   line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
 }
@@ -371,6 +359,7 @@ iframe,
 embed,
 object {
   display: block; /* 1 */
+  vertical-align: middle; /* 2 */
 }
 
 /*
@@ -2063,29 +2052,6 @@ html {
 .navbar-end {
   width: 50%;
   justify-content: flex-end;
-}
-
-.bg-\[white\].p-4.rounded-lg {
-  border: 1px solid black;
-  align-items: center;
-}
-
-
-.yhteystiedot {
-  display: flex;
-  flex-direction: column;
-  align-items: lcenter;
-  justify-content: center;
-  padding: 1rem;
-  background-color: white;
-  color: var(--fc);
-}
-
-.contact-form-process {
-  display: inline-block;
-  width: 100%;
-  align-items: left;
-  border: 1px solid black;
 }
 .radio {
   flex-shrink: 0;

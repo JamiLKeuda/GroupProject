@@ -3,6 +3,9 @@
     <head>
         <link href="jere.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,21 +13,54 @@
         <title>Ota yhteyttä</title>
     </head>
     <body>
-        <div class="page-header">
-            <div class="nav-bar">
-              <div class="social-media-icons">
-                <a href="https://www.instagram.com/info.yessies/" target="_blank"><img src="imgs/instagram.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/MainospalvelutYessies" target="_blank"><img src="imgs/face.png" alt="facebook"></a>
-              </div>
-              <div id="navigation-bar" class="links">
-                <a href="index.html" class="active"> HOME </a>
-                <a href="shop.html">  SHOP </a>
-                <a href="about.html"> ABOUT  </a>
-                <a href="contact.html"> CONTACT </a>
-              </div>
+
+<!-- this is the navigation bar-->
+
+<div class="navbar bg-[#20b2aa] text-white">
+    <div class="navbar-start">
+      <div class="dropdown lg:hidden">
+        <label tabindex="0" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>temp</a></li>
+          <li><a>temp</a></li>
+          <li><a>temp</a></li>
+        </ul>
+      </div>
+      <a class="" href="index.html"><img class="h-24 w-20 ml-10" src="yessieslogo23423.png" alt=""></a>
+    </div>
+    
+    <div class="navbar-center">
+        <ul class="menu menu-horizontal px-1 space-x-20 right-96 font-extrabold">
+            <li class="hover:bg-[#1da8a1]"><a href="about.html">Tietoa minusta</a></li>
+            <li class="hover:bg-[#1da8a1]"><a href="shop.html">Palvelut</a></li>
+            <li class="hover:bg-[#1da8a1]"><a href="contact.html">Ota yhteyttä</a></li>
+          </ul>
+    </div>
+    <div class="navbar-end">
+        <div class="grid grid-flow-col gap-4 mr-10">
+            <a href="https://twitter.com/"><img class="w-8 mt-1" src="twitterlogo.png" alt=""></a> 
+            <a href="https://www.instagram.com/"><img class="w-8 mt-0.5 ml-1" src="Instagram_logo_2016.svg.webp" alt=""></a>
+          </div>
+    </div>
+  </div>
+  <!-- Yhteystietojen container-->
+  <div class="yhteystiedot">
+    <h1 class="text-3xl font-bold text-center mt-10">Ota yhteyttä</h1>
+    <div class="grid grid-cols-2 gap-4 mt-10">
+      <div class="bg-[white] p-4 rounded-lg" style="
+        width: 620px;
+        height: 320px;">
+        <h1 class="text-3xl font-bold text-center">Yhteystiedot</h1>
+        <h2 class="text-center">+358 40 504 9704</h2>
+        <h2 class="text-center"><a class="sahkop" href="mailto:info.yessies@gmail.com">info.yessies@gmail.com</a></h2>
+
+  </div>
+     <!-- Yhteydenottolomakkeen container (Korjaus TEHTY: formiin kiinnittynyt footer(korjaus tehty tablen sulut eivät olleen divin sisällä. 17.4.)) -->
             <div class="contact-form-process">
-                <h1>Ota yhteyttä</h1>
-                <img class="logo" src="yessieslogo23423.png" alt="logo"> 
+                <h1>Yhteydenottolomake</h1>
+                <img class="logoform" src="yessieslogo23423.png" alt="logo"> 
         <form action="contact-form-process.php" method="post">
             <table>
                 <tr>
@@ -50,8 +86,37 @@
                 <tr>
                     <td colspan="2"><input type="submit" name="submit" value="Lähetä" /></td>
                 </tr>
+              </table>
             </div>
-            </table>
+    </div>
+  </div>
+
         </form>
+        <!-- Footer here -->
+          <div>
+        <div class="w-full mx-auto">
+            <footer class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 bg-[#20b2aa]">
+              <div class="flex flex-col md:flex-row items-center justify-between mt-3 sm:mt-0 space-x-8">
+                <div class="flex items-center space-x-4">
+                  <img class="h-24" src="yessieslogo23423.png" alt="">
+                  <div class="flex flex-col">
+                   
+                    <div class="flex md:flex-col items-center md:justify-center md:space-y-2">
+                      <div class="flex flex-row items-center space-x-4">
+    
+                        <a href="https://twitter.com/"><img class="w-8 mt-1 bg-white" src="twitterlogo.png" alt=""></a> 
+                        <span class="text-xs text-white sm:text-center dark:text-white"><a href="https://twitter.com/">Twitter</a></span>
+                        <a href="https://www.instagram.com/"><img class="w-8 mt-1 bg-white" src="Instagram_logo_2016.svg.webp" alt=""></a>
+                        <span class="text-xs text-gray-500 sm:text-center dark:text-white"><a href="https://www.instagram.com/">Instagram</a></span>
+                        </div>
+                    <div class="LAZY"></div>
+                    <div class="LAZY"></div>
+                        <span class="text-2xl text-white sm:text-center dark:text-white">© 2022 Toiminimi Jessica Karlsson</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
   </body>
 </html>
