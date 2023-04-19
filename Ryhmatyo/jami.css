@@ -22,3 +22,7 @@
     width: 700px;
     height: 700px;
   }
+
+  .btn-primary {
+    background-color: #20b2aa;
+  }
