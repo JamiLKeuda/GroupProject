@@ -10,13 +10,16 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
         <title>Home</title>
 
             <style>
                 body {
                     background-attachment:fixed;
-                    background-color: rgb(76, 76, 76);
+                    background-color: rgb(101, 101, 101);
                     
                 }
             </style>
@@ -34,16 +37,18 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>temp</a></li>
-              <li><a>temp</a></li>
-              <li><a>temp</a></li>
+              <li><a href="index.html">Koti</a></li>
+              <li><a href="about.html">Yritykseni</a></li>
+              <li><a href="contact.html">Ota yhteyttä</a></li>
+              <li><a href="shop.html">Suunnittelu palvelu</a></li>
             </ul>
           </div>
-          <a class="" href="index.html"><img class="h-24 w-20 ml-10" src="yessieslogo23423.png" alt=""></a>
+          <a class="" href="index.html"><img class="h-24 w-24 ml-10" src="imgs/Yessies_logo_2023.png" alt=""></a>
         </div>
         
         <div class="navbar-center">
             <ul class="menu menu-horizontal px-1 space-x-20 right-96 font-extrabold">
+                <li class="hover:bg-[#1da8a1]"><a href="index.html">Koti</a></li>
                 <li class="hover:bg-[#1da8a1]"><a href="about.html">Tietoa minusta</a></li>
                 <li class="hover:bg-[#1da8a1]"><a href="shop.html">Palvelut</a></li>
                 <li class="hover:bg-[#1da8a1]"><a href="contact.html">Ota yhteyttä</a></li>
@@ -51,16 +56,43 @@
         </div>
         <div class="navbar-end">
             <div class="grid grid-flow-col gap-4 mr-10">
-                <a href="https://twitter.com/"><img class="w-8 mt-1" src="twitterlogo.png" alt=""></a> 
-                <a href="https://www.instagram.com/"><img class="w-8 mt-0.5 ml-1" src="Instagram_logo_2016.svg.webp" alt=""></a>
+                <a href="https://www.facebook.com/MainospalvelutYessies" target="_blank"><img class="w-8 mt-0.5 rounded-box" src="jenna/facebook.png" alt=""></a> 
+                <a href="https://www.instagram.com/info.yessies/" target="_blank"><img class="w-8 mt-0.5 ml-1" src="Instagram_logo_2016.svg.webp" alt=""></a>
               </div>
         </div>
       </div>
 
-          
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-top rounded-box" src="imgs/paita.JPG" alt="Card image" width="375px">
+              <div class="card-body">
+                <h4 class="card-title text-white">Jessica Karlsson</h4>
+                <p class="card-text text-white">Graafista suunnittelua vuodesta 2004</p>
+                <a href="about.html" class="btn btn-primary text-white">Tietoa minusta</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img class="card-img-bot rounded-box" src="imgs/suunnittelu.JPG" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title text-white">Graafinen suunnittelu, Painatus ja paljon muuta!</h4>
+                <p class="card-text text-white">Sinulla idea, Minulla toteutus!</p>
+                <a href="shop.html" class="btn btn-primary">Suunnittelu palveluun</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
           <!--Footer here, with carousel-->
-          <div class="container">
-            <h2>Yessies</h2>  
+          <div class="container text-white text-center">
+            <h2>Minun työni</h2>
+            <p>Tässä on viimeisimpiä töitäni</p>  
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -72,15 +104,15 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="imgs/shirtart.png" alt="shirt art">
+                  <img src="imgs/shirtart.png" style="width: 100%;" class="d-block w-100" alt="shirt art">
                 </div>
 
                 <div class="item">
-                  <img src="imgs/postcard.png" alt="postcard">
+                  <img src="imgs/postcard.png" style="width: 100%;" class="d-block w-100" alt="postcard">
                 </div>
 
                 <div class="item">
-                  <img src="imgs/professionality.png" alt="professionality">
+                  <img src="imgs/professionality.png" style="width: 100%;" class="d-block w-100" alt="professionality">
                 </div>
               </div>
           
@@ -100,20 +132,20 @@
             <footer class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 bg-[#20b2aa]">
               <div class="flex flex-col md:flex-row items-center justify-between mt-3 sm:mt-0 space-x-8">
                 <div class="flex items-center space-x-4">
-                  <img class="h-24" src="yessieslogo23423.png" alt="">
+                  <img class="h-24" src="imgs/Yessies_logo_2023.png" alt="">
                   <div class="flex flex-col">
                    
                     <div class="flex md:flex-col items-center md:justify-center md:space-y-2">
                       <div class="flex flex-row items-center space-x-4">
     
-                        <a href="https://twitter.com/"><img class="w-8 mt-1" src="twitterlogo.png" alt=""></a> 
-                        <span class="text-xs text-white sm:text-center dark:text-white"><a href="https://twitter.com/">Twitter</a></span>
-                        <a href="https://www.instagram.com/"><img class="w-8 mt-1" src="Instagram_logo_2016.svg.webp" alt=""></a>
-                        <span class="text-xs text-gray-500 sm:text-center dark:text-white"><a href="https://www.instagram.com/">Instagram</a></span>
+                        <a href=""><img class="w-8 mt-1 rounded-box" src="jenna/facebook.png" alt=""></a> 
+                        <span class="text-base text-white sm:text-center dark:text-white"><a href="https://www.facebook.com/MainospalvelutYessies">Facebook</a></span>
+                        <a href="https://www.instagram.com/info.yessies"><img class="w-8 mt-1" src="Instagram_logo_2016.svg.webp" alt=""></a>
+                        <span class="text-base text-gray-500 sm:text-center dark:text-white"><a href="https://www.instagram.com/">Instagram</a></span>
                         </div>
                     <div class="LAZY"></div>
                     <div class="LAZY"></div>
-                        <span class="text-sm text-white sm:text-center dark:text-white">© 2022 Toiminimi Jessica Karlsson</span>
+                        <span class="text-base text-white sm:text-center dark:text-white">© 2022 Toiminimi Jessica Karlsson</span>
                       </div>
                     </div>
                   </div>

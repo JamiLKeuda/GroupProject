@@ -12,3 +12,13 @@
     width: 50%;
     object-fit: fill;
   }
+
+  * {
+    font-family: 'Space Mono', monospace;
+  }
+
+  .carousel {
+    margin: auto;
+    width: 700px;
+    height: 700px;
+  }
