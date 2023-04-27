@@ -1,6 +1,7 @@
-  .carousel-inner {
+
+.carousel-inner {
     display: inline-flex;
-    margin-left: 0;
+    position: relative;
   }
 
   .carousel-indicators li {
@@ -10,19 +11,47 @@
   .carousel-inner .item img {
     margin: auto;
     width: 50%;
-    object-fit: fill;
+    object-fit: cover;
+    overflow: hidden;
   }
 
   * {
-    font-family: 'Space Mono', monospace;
+    font-family: 'Poppins', sans-serif;
   }
 
   .carousel {
     margin: auto;
     width: 700px;
     height: 700px;
+    margin-bottom: 7rem;
+    background-color: rgb(75, 75, 75);
+    overflow: hidden;
   }
 
   .btn-primary {
     background-color: #20b2aa;
   }
+
+  .card-img-top, .card-img-bot {
+    height: 310px;
+    width: 600px;
+    
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+
+  #myCarousel {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+.cards {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2rem;
+  background-color: #20b2aa;
+}
