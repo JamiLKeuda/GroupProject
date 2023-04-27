@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['D:/vscode/webd/GroupProject/Ryhmatyo/shop.html',],
+  content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        quick: ['Quicksand'],
+        poppins: ['Poppins']
+      }
+    },
   },
   plugins: [require("daisyui")],
 
