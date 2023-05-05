@@ -30,9 +30,9 @@
           </div>
           <div class="navbar-center">
               <ul class="menu menu-horizontal px-1 space-x-20 right-96 font-extrabold font-poppins">
-                  <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="index.html">Etusivu</a></li>
-                  <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="about.html">Tietoa yrityksestäni</a></li>
-                  <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="#palvelusec">Palvelut</a></li>
+                  <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="index.html">Koti</a></li>
+                  <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="about.html">Yritykseni</a></li>
+                  <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="shop.html">Suunnittelupalvelu</a></li>
                   <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="contact.html">Ota yhteyttä</a></li>
                 </ul>
           </div>
@@ -49,35 +49,30 @@
   <!-- Main alkaa, uusi sisältö 28.04.2023 alkaen-->
 <main> <!--Edellinen main poistettu 27.04.2023 klo 21, sisältö rakennetaan uudelleen (Trello - Yhteystietosivun Refactoring)-->
   <div class="flex w-full">
-    <div class="grid h-120 flex-grow card bg-base-300 rounded-box place-items-center text-white">
-      <h1 class="font-poppins font-extrabold mt-6 border-b-2 border-b-white border-solid">Yhteystiedot</h1>
-      <h2>Toiminimi Jessica Karlsson</h2>
+    <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white">
+      <img src="./jenna/Yessieslogo2023.png" alt="Yessies logo">
+      <h1 class="font-poppins font-extrabold mt-6 border-b-2 border-b-white border-solid">Yhteystiedot</h1><br>
+      <h2 class="font-poppins font-extrabold">Toiminimi Jessica Karlsson</h2><br>
       <p>Puhelin: 040 504 9704</p>
-      <p>Sähköposti: info.yessies@gmail.com</p>
+      <p>Sähköposti: info.yessies@gmail.com</p><br>
       <p class="mb-6 border-b-2 border-b-white border-solid">Y-Tunnus: 1873624-3</p>
     </div>
     <div class="divider divider-horizontal"></div>
-    <div class="grid h-120 flex-grow card bg-base-300 rounded-box place-items-center text-white">
+    <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white">
       <h1 class="font-poppins font-extrabold mt-6">Yhteydenottolomake</h1>
-    <p>Please fill out this form with the required information</p>
+    <p>Onko sinulla kysyttävää? Jätä yhteystietosi sekä viestisi alle, niin olen sinuun yhteydessä.</p>
     <form method="post" action='contact-form-process.php'>
       <fieldset>
-        <label for="first-name">Etunimesi: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Sukunimesi: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Sähköposti: <input id="email" name="email" type="email" required /></label>
-        <label for="phone">Puhelinnumero: <input id="phone" name="phone" type="tel" required /></label>
+        <label class="block p-2 align-middle" for="first-name">Etunimesi:  <input class="inline-block bg-white/15 text-white" id="first-name" name="first-name" type="text" required /></label>
+        <label class="block p-2 align-middle" for="last-name">Sukunimesi:  <input class="inline-block" id="last-name" name="last-name" type="text" required /></label>
+        <label class="block p-2 align-middle" for="email">Sähköposti:  <input id="email" name="email" type="email" required /></label>
+        <label for="phone">Puhelinnumero:  <input id="phone" name="phone" type="tel" required /></label>
       </fieldset>
-      <fieldset>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" /> Haluan liittyä postituslistallenne</label>
-        <label for="terms-and-conditions">
-          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> Hyväksyn sivuston käyttöehdot.
-        </label>
-      </fieldset>
-        <label for="bio">Kirjoita viesti tähän:
+        <label class="block p-2 align-middle" for="bio">Kirjoita viesti tähän:
           <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Kirjoita tiedustelusi tai asiasi tähän..."></textarea>
         </label>
       </fieldset>
-      <input type="submit" value="Lähetä" />
+      <button type="submit" value="Lähetä" class="btn btn-primary text-white bg-[#12B1C1]-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-[#12B1C1] dark:hover:bg-blue-700 dark:focus:ring-blue-800">Lähetä</button>
     </form>
     </div>
   </div>
