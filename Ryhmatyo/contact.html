@@ -47,31 +47,32 @@
   </header>
   <!-- Header loppuu-->
   <!-- Main alkaa, uusi sisältö 28.04.2023 alkaen-->
+  <!-- Sivun ulkoasun päivitys 5.5.2023-->
 <main> <!--Edellinen main poistettu 27.04.2023 klo 21, sisältö rakennetaan uudelleen (Trello - Yhteystietosivun Refactoring)-->
   <div class="flex w-full">
-    <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white">
+    <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white text-xl">
       <img class="mt-6" src="./jenna/Yessieslogo2023.png" alt="Yessies logo">
-      <h1 class="font-poppins font-extrabold mt-6 border-b-2 border-b-white border-solid">Yhteystiedot</h1><br>
-      <h2 class="font-poppins font-extrabold">Toiminimi Jessica Karlsson</h2><br>
+      <h1 class="font-poppins font-extrabold mt-6 border-b-2 text-2xl border-b-white border-solid">Yhteystiedot</h1><br>
+      <h2 class="font-poppins font-extrabold">Toiminimi Jessica Karlsson</h2>
       <p class="font-poppins font-extrabold">Puhelin: 040 504 9704</p>
       <p class="font-poppins font-extrabold">Sähköposti: info.yessies@gmail.com</p><br>
-      <p class="mb-12 border-b-2 border-b-white border-solid">Y-Tunnus: 1873624-3</p>
+      <p class=" font-poppins mb-12 border-b-2 border-b-white border-solid">Y-Tunnus: 1873624-3</p>
     </div>
     <div class="divider divider-horizontal"></div>
     <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white">
-      <h1 class="font-poppins font-extrabold mt-12 text-xl">Yhteydenottolomake</h1><br>
+      <h1 class="font-poppins font-extrabold mt-12 text-2xl border-b-2 border-white border-solid">Yhteydenottolomake</h1><br>
     <p>Onko sinulla kysyttävää? Jätä yhteystietosi sekä viestisi alle, niin olen sinuun yhteydessä.</p><br>
     <form method="post" action='contact-form-process.php'>
       <fieldset class="font-poppins">
-        <label class="block p-2 align-middle text-center" for="first-name">Etunimesi:  <input class="inline-block bg-white/15 text-white" id="first-name" name="first-name" type="text" required /></label>
-        <label class="block p-2 align-middle text-center" for="last-name">Sukunimesi:  <input class="inline-block" id="last-name" name="last-name" type="text" required /></label>
+        <label class="block p-2 align-middle text-center" for="first-name">Etunimesi:  <input class="inline-block " id="first-name" name="first-name" type="text" required /></label>
+        <label class="block p-2 align-middle text-center" for="last-name">Sukunimesi:  <input class="inline-block text-white" id="last-name" name="last-name" type="text" required /></label>
         <label class="block p-2 align-middle text-center" for="email">Sähköposti:  <input id="email" name="email" type="email" required /></label>
         <label class="block p-2 align-middle text-center" for="phone">Puhelinnumero:  <input id="phone" name="phone" type="tel" required /></label>
       </fieldset>
         <br>
       <fieldset class=" font-poppins">
         <div class="form-control">
-          <h1 class="text-center font-extrabold text-xl">Mitä yhteydenottosi koskee?</h1><br>
+          <h1 class="text-center font-extrabold text-2xl border-b-2 border-t-2 border-white border-solid">Mitä yhteydenottosi koskee?</h1><br>
         <label class="label cursor-pointer align-middle text-center">
           <span class="label-text text-white">Mainossuunnittelu - logot, käyntikortit, esitteet, suoramainokset, bannerit jne.</span> 
           <input type="radio" name="radio-10" class="radio checked:bg-[#12B1C1]" checked />
@@ -90,12 +91,15 @@
         </div>
       </div>
       </fieldset>
+      <br>
       <fieldset>
-        <label class="block p-2 align-text-bottom font-poppins" for="bio">Kirjoita viesti tähän:
-          <textarea class="textarea-lg" id="bio" name="bio" rows="6" cols="20" placeholder="Kirjoita tiedustelusi tai asiasi tähän..."></textarea>
+        <label class="block p-2 align-text-bottom font-poppins" for="bio">
+          <textarea class="textarea-lg" id="bio" name="bio" rows="5" cols="52" placeholder="Kirjoita tiedustelusi tai asiasi tähän..."></textarea>
         </label>
       </fieldset>
-      <button type="submit" value="Lähetä" class="btn btn-primary text-white bg-[#12B1C1]-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-[#12B1C1] dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-12">Lähetä</button>
+      <div class="place-content-center">
+      <button type="submit" value="Lähetä" class="btn btn-primary text-white bg-[#12B1C1]-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-[#12B1C1] dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-12 ml-60">Lähetä</button>
+      </div>
     </form>
     </div>
   </div>
@@ -116,7 +120,7 @@
                       </div>
                           <div class="LAZY"></div>
                           <div class="LAZY"></div>
-                      <span class="text-sm text-white sm:text-center dark:text-white font-poppins">© 2022 Toiminimi Jessica Karlsson</span>
+                      <span class="text-sm text-white sm:text-center dark:text-white font-poppins">© 2023 Toiminimi Jessica Karlsson</span>
                     </div>
                   </div>
                 </div>
