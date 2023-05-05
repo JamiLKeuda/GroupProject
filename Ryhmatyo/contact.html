@@ -50,29 +50,52 @@
 <main> <!--Edellinen main poistettu 27.04.2023 klo 21, sisältö rakennetaan uudelleen (Trello - Yhteystietosivun Refactoring)-->
   <div class="flex w-full">
     <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white">
-      <img src="./jenna/Yessieslogo2023.png" alt="Yessies logo">
+      <img class="mt-6" src="./jenna/Yessieslogo2023.png" alt="Yessies logo">
       <h1 class="font-poppins font-extrabold mt-6 border-b-2 border-b-white border-solid">Yhteystiedot</h1><br>
       <h2 class="font-poppins font-extrabold">Toiminimi Jessica Karlsson</h2><br>
-      <p>Puhelin: 040 504 9704</p>
-      <p>Sähköposti: info.yessies@gmail.com</p><br>
-      <p class="mb-6 border-b-2 border-b-white border-solid">Y-Tunnus: 1873624-3</p>
+      <p class="font-poppins font-extrabold">Puhelin: 040 504 9704</p>
+      <p class="font-poppins font-extrabold">Sähköposti: info.yessies@gmail.com</p><br>
+      <p class="mb-12 border-b-2 border-b-white border-solid">Y-Tunnus: 1873624-3</p>
     </div>
     <div class="divider divider-horizontal"></div>
     <div class="grid h-120 flex-grow card bg-base-100 rounded-box place-items-center text-white">
-      <h1 class="font-poppins font-extrabold mt-6">Yhteydenottolomake</h1>
-    <p>Onko sinulla kysyttävää? Jätä yhteystietosi sekä viestisi alle, niin olen sinuun yhteydessä.</p>
+      <h1 class="font-poppins font-extrabold mt-12 text-xl">Yhteydenottolomake</h1><br>
+    <p>Onko sinulla kysyttävää? Jätä yhteystietosi sekä viestisi alle, niin olen sinuun yhteydessä.</p><br>
     <form method="post" action='contact-form-process.php'>
-      <fieldset>
-        <label class="block p-2 align-middle" for="first-name">Etunimesi:  <input class="inline-block bg-white/15 text-white" id="first-name" name="first-name" type="text" required /></label>
-        <label class="block p-2 align-middle" for="last-name">Sukunimesi:  <input class="inline-block" id="last-name" name="last-name" type="text" required /></label>
-        <label class="block p-2 align-middle" for="email">Sähköposti:  <input id="email" name="email" type="email" required /></label>
-        <label for="phone">Puhelinnumero:  <input id="phone" name="phone" type="tel" required /></label>
+      <fieldset class="font-poppins">
+        <label class="block p-2 align-middle text-center" for="first-name">Etunimesi:  <input class="inline-block bg-white/15 text-white" id="first-name" name="first-name" type="text" required /></label>
+        <label class="block p-2 align-middle text-center" for="last-name">Sukunimesi:  <input class="inline-block" id="last-name" name="last-name" type="text" required /></label>
+        <label class="block p-2 align-middle text-center" for="email">Sähköposti:  <input id="email" name="email" type="email" required /></label>
+        <label class="block p-2 align-middle text-center" for="phone">Puhelinnumero:  <input id="phone" name="phone" type="tel" required /></label>
       </fieldset>
-        <label class="block p-2 align-middle" for="bio">Kirjoita viesti tähän:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Kirjoita tiedustelusi tai asiasi tähän..."></textarea>
+        <br>
+      <fieldset class=" font-poppins">
+        <div class="form-control">
+          <h1 class="text-center font-extrabold text-xl">Mitä yhteydenottosi koskee?</h1><br>
+        <label class="label cursor-pointer align-middle text-center">
+          <span class="label-text text-white">Mainossuunnittelu - logot, käyntikortit, esitteet, suoramainokset, bannerit jne.</span> 
+          <input type="radio" name="radio-10" class="radio checked:bg-[#12B1C1]" checked />
+        </label>
+        </div>
+        <div class="form-control">
+          <label class="label cursor-pointer align-middle text-center">
+            <span class="label-text text-white">Mainosvaatteet - omilla painatuksilla.</span> 
+            <input type="radio" name="radio-10" class="radio checked:bg-[#12B1C1]" checked />
+          </label>
+        <div class="form-control">
+          <label class="label cursor-pointer align-middle text-center">
+            <span class="label-text text-white">Jotain muuta? Kirjoita asiasi alla olevaan viestikenttään.</span>
+            <input type="radio" name="radio-10" class="radio checked:bg-[#12B1C1]" checked />
+          </label>
+        </div>
+      </div>
+      </fieldset>
+      <fieldset>
+        <label class="block p-2 align-text-bottom font-poppins" for="bio">Kirjoita viesti tähän:
+          <textarea class="textarea-lg" id="bio" name="bio" rows="6" cols="20" placeholder="Kirjoita tiedustelusi tai asiasi tähän..."></textarea>
         </label>
       </fieldset>
-      <button type="submit" value="Lähetä" class="btn btn-primary text-white bg-[#12B1C1]-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-[#12B1C1] dark:hover:bg-blue-700 dark:focus:ring-blue-800">Lähetä</button>
+      <button type="submit" value="Lähetä" class="btn btn-primary text-white bg-[#12B1C1]-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center bg-[#12B1C1] dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-12">Lähetä</button>
     </form>
     </div>
   </div>
