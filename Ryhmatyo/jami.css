@@ -10,7 +10,7 @@
 
   .carousel-inner .item img {
     margin: auto;
-    width: 50%;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
   }
@@ -73,3 +73,4 @@
   padding-left: 40px;
   color: white
 }
+
