@@ -4,67 +4,84 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fontit -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap" rel="stylesheet">
+        <!-- CSS -->
         <link rel="stylesheet" href="output.css">
+        <!-- Pikkulogo -->
         <link rel="icon" type="image/png" href="./jenna/Yessies_logo_2023.png">
-        <title>Yessies</title>
+        <!--Metadata alkaa-->
+        <meta name="description" content="Olemme yritys, joka tarjoaa painettuja vaatteita ja graafisen suunnittelun palveluita. Meidän tavoitteena on tarjota asiakkaillemme korkealaatuisia tuotteita ja palveluita." />
+        <meta name="keywords" content="vaatepainatus, graafinen suunnittelu, painetut vaatteet, yessies, logot," />
+        <meta http-equiv="Content-Language" content="fi-FI" />
+        <meta name="author" content="Yessies" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Etusivu"/>
+        <meta property="og:url" content="https://yessies.fi/"/>
+        <meta property="og:type" content="article"/>
+        <!--Metadata loppuu-->
+        <title>Yessies.fi</title>
     </head>   
     <body>
         <!-- Header alkaa-->
         <header>
             <div class="navbar bg-[#12B1C1] text-white">
                 <div class="navbar-start">
-                  <div class="dropdown lg:hidden">
-                    <label tabindex="0" class="btn btn-ghost btn-circle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>temp</a></li>
-                      <li><a>temp</a></li>
-                      <li><a>temp</a></li>
-                    </ul>
-                  </div>
-                  <a class=""><img class="h-24 ml-10" src="./jenna/Yessies_logo_2023.png" alt=""></a>
+                  <!--Navbar logo-->
+                  <a class="" href="index.html"><img class="h-24 ml-10" src="./jenna/Yessies_logo_2023.png" alt="Yessies logo"></a>
                 </div>
+                <!--Navbar keskiosa-->
                 <div class="navbar-center">
                     <ul class="menu menu-horizontal px-1 space-x-20 right-96 font-extrabold font-poppins">
                         <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="index.html">Etusivu</a></li>
                         <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="about.html">Yritykseni</a></li>
                         <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="shop.html">Suunnittelupalvelu</a></li>
                         <li class="hover:border-solid hover:border-2 hover:border-white/25 hover:rounded-md hover:shadow-2xl"><a href="contact.html">Ota yhteyttä</a></li>
-                      </ul>
+                    </ul>
                 </div>
-                <!-- Somet -->
+                <!--Navbar somet -->
                 <div class="navbar-end">
                     <div class="grid grid-flow-col gap-4 mr-10">
-                        <a href="https://facebook.com/"><img class="w-8 h-8 mt-1" src="./jenna/facebook.png" alt="facebook"></a> 
-                        <a href="https://www.instagram.com/"><img class="w-8 h-8 mt-0.5 ml-1" src="./jenna/instagram.png" alt="instagram"></a>
-                      </div>
+                        <a href="https://www.facebook.com/MainospalvelutYessies"><img class="w-8 h-8 mt-1 rounded-box" src="./jenna/facebook.png" alt="facebook"></a> 
+                        <a href="https://www.instagram.com/info.yessies/"><img class="w-8 h-8 mt-0.5 ml-1 rounded-box" src="./jenna/instagram.png" alt="instagram"></a>
+                        <a href="mailto:info.yessies@gmail.com"><img class="w-8 mt-0.5 rounded-box" src="imgs/email.png" alt="email kuvake"></a>
+                    </div>
                 </div>
             </div>
         </header>
         <!-- Header loppuu-->
         <!-- Main alkaa-->
-        <main>
-        <div class="bg-slate-700">
-          <div class="flex flex-row justify-center"><h1 class="text-5xl font-bold font-poppins text-white p-10">Yritykseni</h1>
-          </div>
-          <div class="grid grid-cols-3 justify-center gap-1 px-52 pb-6">
-            <div class="row-span-2">
-              <img src="./jenna/DSC00078.jpg" class="max-w-sm rounded-lg shadow-2xl">
-              <div class="p-2"></div>
-              <img src="./jenna/DSC_0179.jpg" class="max-w-sm rounded-lg shadow-2xl">
+        <main class="bg-[#383838]">
+          <section>
+            <div class="container flex flex-col items-center px-6 mx-auto space-y-0 md:space-y-0 md:flex-row">
+              <!-- Teksti osio -->
+              <div class="flex flex-col mb-32 space-y-12 mt-14 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center font-poppins text-white md:text-5xl md:text-center">
+                  Yritykseni
+                </h1>
+                <p class="max-w-lg text-center font-poppins text-white md:text-left">Olen Jessica Karlsson ja olen tehnyt työtä paino- ja  mainostuotteiden kanssa jo vuodesta 2004. Käsieni kautta liikkunut useita painotuotteita, mainostekstiilejä ja mainoslahjoja.<br><br> Olen kokenut ja aikaansaava mainosgraafikko ja pidän aina tiukasti kiinni sovitusta aikatauluista. Yrittäjäurani aikana olenkin saanut suunnitella ja toteuttaa asiakkaitteni kanssa hyvin erilaisia painotuotteita käyntikortista - laajaan tuotekuvastoon, tuote-etiketistä - nettibanneriin ja myös oppikirjoja. <br><br> Tarinani sai muutoksen vuonna 2020 keväällä kun aloitin opiskelemaan Artesaaniksi. Asiakkaat haluavat yhä laadukkaampia ja lähellä tuotettuja lahjaesineitä ja kodinsisustustavaroita. <br><br> Toimin Itä-Uudeltamaalta käsin ja tunnen henkilökohtaisesti suuren joukon taitavia käsityöläisiä.</p>
+              </div>
+              <!-- Kuva osio -->
+              <div class="md:w-1/2">
+                <div class="flex">
+                  <div class="p-2 w-1/2"><img class="rounded-lg" src="./jenna/hemmabast.jpg" alt="olkihattu logolla">
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <img class="rounded-lg" src="./jenna/active.jpg" alt="active paidat">
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="p-2 w-1/2"><img class="rounded-lg" src="./jenna/brostrom.jpg" alt="broström käyntikortti">
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <img class="rounded-lg" src="./jenna/konsert.png" alt="konsert">
+                  </div>
+                </div>  
+              </div>
             </div>
-            <div class="row-span-2">
-              <img src="./jenna/DSC00074.jpg" class="max-w-sm rounded-lg shadow-2xl">
-              <div class="p-2"></div>
-              <img src="./jenna/DSC02670.jpg" class="max-w-sm rounded-lg shadow-2xl">
-            </div>
-            <div class="p-4 font-poppins text-white row-span-2"><p>Olen Jessica Karlsson ja olen tehnyt työtä paino- ja  mainostuotteiden kanssa jo vuodesta 2004. Käsieni kautta liikkunut useita painotuotteita, mainostekstiilejä ja mainoslahjoja.<br><br> Olen kokenut ja aikaansaava mainosgraafikko ja pidän aina tiukasti kiinni sovitusta aikatauluista. Yrittäjäurani aikana olenkin saanut suunnitella ja toteuttaa asiakkaitteni kanssa hyvin erilaisia painotuotteita käyntikortista - laajaan tuotekuvastoon, tuote-etiketistä - nettibanneriin ja myös oppikirjoja. <br><br> Tarinani sai muutoksen vuonna 2020 keväällä kun aloitin opiskelemaan Artesaaniksi. Asiakkaat haluavat yhä laadukkaampia ja lähellä tuotettuja lahjaesineitä ja kodinsisustustavaroita. <br><br> Toimin Itä-Uudeltamaalta käsin ja tunnen henkilökohtaisesti suuren joukon taitavia käsityöläisiä.</p>
-          </div>
-        </div> 
+          </section>
         </main>
         <!-- Main loppuu-->
         <!-- Footer alkaa-->
@@ -72,14 +89,16 @@
             <footer class="p-4 shadow md:flex md:items-center md:justify-between md:p-6 bg-[#12B1C1]">
               <div class="flex flex-col md:flex-row items-center justify-between mt-3 sm:mt-0 space-x-8">
                 <div class="flex items-center space-x-4">
+                   <!-- Footer logo -->
                   <img class="h-24" src="./jenna/Yessies_logo_2023.png" alt="Yessies logo">
                   <div class="flex flex-col">                 
                     <div class="flex md:flex-col items-center md:justify-center md:space-y-2">
                       <div class="flex flex-row items-center space-x-4">
-                        <a href="https://facebook.com/"><img class="w-8 mt-1" src="./jenna/facebook.png" alt="facebook"></a> 
-                        <span class="text-xs text-white sm:text-center dark:text-white font-poppins"><a href="https://facebook.com/">Facebook</a></span>
-                        <a href="https://www.instagram.com/"><img class="w-8 mt-1" src="./jenna/instagram.png" alt="instagram"></a>
-                        <span class="text-xs text-gray-500 sm:text-center dark:text-white font-poppins"><a href="https://www.instagram.com/">Instagram</a></span>
+                        <!-- Footer somet -->
+                        <a href="https://www.facebook.com/MainospalvelutYessies"><img class="w-8 mt-1" src="./jenna/facebook.png" alt="facebook"></a> 
+                        <span class="text-xs text-white sm:text-center dark:text-white font-poppins"><a href="https://www.facebook.com/MainospalvelutYessies">Facebook</a></span>
+                        <a href="https://www.instagram.com/info.yessies/"><img class="w-8 mt-1" src="./jenna/instagram.png" alt="instagram"></a>
+                        <span class="text-xs text-gray-500 sm:text-center dark:text-white font-poppins"><a href="https://www.instagram.com/info.yessies/">Instagram</a></span>
                         </div>
                             <div class="LAZY"></div>
                             <div class="LAZY"></div>
