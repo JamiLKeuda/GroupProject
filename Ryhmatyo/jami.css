@@ -21,11 +21,12 @@
 
   .carousel {
     margin: auto;
-    width: 700px;
-    height: 700px;
+    width: 100vh;
+    height: auto;
     margin-bottom: 7rem;
     background-color: rgb(75, 75, 75);
     overflow: hidden;
+    margin-top: 5%;
   }
 
   .btn-primary {
@@ -74,3 +75,6 @@
   color: white
 }
 
+.container {
+  margin-top: 2.5%;
+}
