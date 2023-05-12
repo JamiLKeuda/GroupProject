@@ -17,10 +17,21 @@
 
         <title>Yessies.fi</title>
 
+        <!--Metadata below-->
+        <meta name="description" content="Olemme yritys, joka tarjoaa painettuja vaatteita ja graafisen suunnittelun palveluita. Meidän tavoitteena on tarjota asiakkaillemme korkealaatuisia tuotteita ja palveluita." />
+        <meta name="keywords" content="vaatepainatus, graafinen suunnittelu, painetut vaatteet, yessies, logot," />
+        <meta http-equiv="Content-Language" content="fi-FI" />
+        <meta name="author" content="Yessies" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Etusivu"/>
+        <meta property="og:url" content="https://yessies.fi/"/>
+        <meta property="og:type" content="article"/>
+        <!--Metadata end-->
+
             <style>
                 body {
                     background-attachment:fixed;
-                    background-color: rgb(80, 80, 80)
+                    background-color: #383838;
                 }
 
                 .carousel-inner {
@@ -72,12 +83,12 @@
               <li><a href="shop.html">Suunnittelu palvelu</a></li>
             </ul>
           </div>
-          <a class="" href="index.html"><img class="h-24 w-24 ml-10" src="imgs/Yessies_logo_2023.png" alt=""></a>
+          <a class="" href="index.html"><img class="h-24 ml-10" src="imgs/Yessies_logo_2023.png" alt=""></a>
         </div>
         
         <div class="navbar-center">
-            <ul class="menu menu-horizontal px-1 space-x-20 right-96 font-extrabold">
-                <li class="hover:bg-[#1da8a1]"><a href="index.html">Koti</a></li>
+            <ul class="menu menu-horizontal px-1 space-x-20 right-96 font-extrabold font-poppins">
+                
                 <li class="hover:bg-[#1da8a1]"><a href="about.html">Yritykseni</a></li>
                 <li class="hover:bg-[#1da8a1]"><a href="shop.html">Suunnittelupalvelu</a></li>
                 <li class="hover:bg-[#1da8a1]"><a href="contact.html">Ota yhteyttä</a></li>
@@ -87,7 +98,8 @@
             <div class="grid grid-flow-col gap-4 mr-10">
                 <a href="https://www.facebook.com/MainospalvelutYessies" target="_blank"><img class="w-8 mt-0.5 rounded-box" src="jenna/facebook.png" alt=""></a> 
                 <a href="https://www.instagram.com/info.yessies/" target="_blank"><img class="w-8 mt-0.5 ml-1" src="Instagram_logo_2016.svg.webp" alt=""></a>
-              </div>
+                <a href="mailto:info.yessies@gmail.com"><img class="w-8 mt-0.5 rounded-box" src="imgs/email.png"></a>
+            </div>
         </div>
       </div>
       <!--navbar end-->
@@ -95,8 +107,7 @@
 
           <!--Footer here, with carousel-->
             <div class="container text-white text-center">
-              <h2>Minun työni</h2>
-              <p>Tässä on viimeisimpiä töitäni</p>  
+              <h2>Graafisen suunnittelun ratkaisuja vaativaan markkinointiin</h2> 
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -161,21 +172,12 @@
           <!--small cards-->
         <div class="container">
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-12">
               <div class="cards">
                 <div class="card-body text-white">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn text-white">Jotain</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="cards">
-                <div class="card-body text-white">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn text-white">Tietoa minusta</a>
+                  <h5 class="card-title">Yessies</h5>
+                  <p class="card-text">Hei! Olen Jessica, ja olen intohimoinen graafisen suunnittelun asiantuntija. Olen työskennellyt suunnittelijana jo 2004 vuodesta asti ja nautin siitä, että saan auttaa ihmisiä suunnittelussa ja toteutuksessa.</p>
+                  <a href="about.html" class="btn text-white btn-md">Tietoa minusta</a>
                 </div>
               </div>
             </div>
@@ -199,7 +201,7 @@
                         </div>
                     <div class="LAZY"></div>
                     <div class="LAZY"></div>
-                        <span class="text-base text-white sm:text-center dark:text-white">© 2022 Toiminimi Jessica Karlsson</span>
+                        <span class="text-base text-white sm:text-center dark:text-white">© 2023 Toiminimi Jessica Karlsson</span>
                       </div>
                     </div>
                   </div>
@@ -208,6 +210,12 @@
             </footer>
           </div>
           <!--Footer end-->
+
+          <a href="contact.html"><button id="scroll-btn">Ota yhteyttä</button></a>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
           
     </body>
 </html>

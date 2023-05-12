@@ -10,7 +10,7 @@
 
   .carousel-inner .item img {
     margin: auto;
-    width: 50%;
+    width: 100%;
     object-fit: cover;
     overflow: hidden;
   }
@@ -21,11 +21,12 @@
 
   .carousel {
     margin: auto;
-    width: 700px;
-    height: 700px;
+    width: 100vh;
+    height: auto;
     margin-bottom: 7rem;
     background-color: rgb(75, 75, 75);
     overflow: hidden;
+    margin-top: 5%;
   }
 
   .btn-primary {
@@ -54,4 +55,26 @@
   margin-right: 10px;
   margin-bottom: 2rem;
   background-color: #20b2aa;
+}
+
+#scroll-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border: black;
+  border-radius: 1em;
+  border-width: 10px !important;
+  padding: 20px 10px;
+  transition: padding 0.5s;
+}
+
+#scroll-btn:hover {
+  padding-left: 40px;
+  color: white
+}
+
+.container {
+  margin-top: 2.5%;
 }
