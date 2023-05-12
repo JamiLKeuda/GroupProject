@@ -3737,6 +3737,10 @@ html {
   margin-top: 3.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -3775,6 +3779,18 @@ html {
 
 .h-\[920px\] {
   height: 920px;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .max-h-fit {
